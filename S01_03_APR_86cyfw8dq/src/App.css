@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+/* App Container */
+.app-container {
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+}
+
+/* Search Box */
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  width: 70%;
+  font-size: 16px;
+  outline: none;
+  text-align: center;
+}
+
+.search-box button {
+  background-color: #4caf50;
+  border: none;
+  padding: 12px 15px;
+  border-radius: 25px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.search-box button svg {
+  font-size: 20px;
+  color: white;
+}
+
+/* Weather Information */
+.weather-info {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.weather-info h2 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.weather-info p {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  margin: 8px 0;
+}
+
+.weather-info svg {
+  margin-right: 10px;
+  font-size: 26px;
+}
+
+/* Forecast Table */
+.forecast-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.forecast-table th,
+.forecast-table td {
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-align: center;
+}
+
+.forecast-table th {
+  background: rgba(255, 255, 255, 0.3);
+  font-weight: bold;
+}
+
+/* Chart Styling */
+canvas {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    max-width: 90%;
+  }
+
+  .search-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-box input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .search-box button {
+    width: 50px;
+    justify-content: center;
+  }
+}
+
+.graph-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.graph-buttons button {
+  padding: 10px 15px;
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.graph-buttons button:hover {
+  background-color: #28a745;
+}
