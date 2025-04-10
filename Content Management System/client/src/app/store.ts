@@ -1,4 +1,4 @@
-// src/app/store.ts
+
 import { configureStore } from '@reduxjs/toolkit';
 import categoryReducer from '../features/categories/categorySlice';
 import postReducer from '../features/posts/postSlice';
