@@ -7,7 +7,7 @@ import 'chart.js/auto';
 import { TextField, Button, Card, CardContent, Typography, CircularProgress, IconButton, Switch } from '@mui/material';
 import styled, { ThemeProvider, createGlobalStyle } from 'styled-components';
 
-const API_KEY: string = "YOUR WEATHER API";
+const API_KEY: string = "6c8c502a91f06ecbdc04a0c2bcfd1aaf";
 
 interface WeatherData {
   name: string;
