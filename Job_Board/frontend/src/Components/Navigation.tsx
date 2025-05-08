@@ -69,7 +69,7 @@ const Navigation = () => {
     { label: "Home", onClick: () => navigate("/") },
     { label: "Browse Jobs", onClick: () => navigate("/seeker/jobs") },
     { label: "My Applications", onClick: () => navigate("/seeker/applications") },
-    { label: "Profile",onclick:()=>navigate("/seeker/profile") },
+    { label: "Profile",onclick:()=> navigate("/seeker/profile") },
     { label: "Resume Chat",  onClick: () => navigate("/seeker/resume") },
     { label: "Sign Out", onClick: handleLogout },
   ];
@@ -77,7 +77,7 @@ const Navigation = () => {
   const employeeLinks = [
     { label: "Home", onClick: () => navigate("/employee/dashboard") },
     { label: "Jobs", onClick: () => navigate("/employee/jobs") },
-    { label: "Applicants", onClick: () => navigate("/employee/job/appplicants") },
+    // { label: "Applicants", onClick: () => navigate("/employee/job/appplicants") },
     { label: "Company", onClick: () => navigate("/employee/company/post") },
     { label: "Sign Out", onClick: handleLogout },
   ];

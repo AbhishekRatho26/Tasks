@@ -7,8 +7,8 @@ const jwt = require("jsonwebtoken")
 const Company = require("../models/Company")
 
 const register = asyncHandler(async (req,res)=>{
-    const {name,email,phone,password,role} = req.body
-    if(!name || !email || !phone || !password || !role){
+    const {email,password,role} = req.body
+    if( !email || !password || !role){
         return res.status(400).json({
             message:"All fields are manadatory",
             success:false
@@ -23,9 +23,7 @@ const register = asyncHandler(async (req,res)=>{
     }
     const hashedPassword = await bcrypt.hash(password,10)
     await User.create({
-        name,
         email,
-        phone,
         password:hashedPassword,
         role
     })

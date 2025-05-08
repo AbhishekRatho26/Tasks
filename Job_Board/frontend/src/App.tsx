@@ -16,6 +16,7 @@ import ApplicantByJob from "./Pages/Employee/JobApplicants"
 import ResumeChat from "./Pages/Seeker/ResumeChat"
 import JobDetailsPage from "./Pages/Seeker/JobDetailsPage"
 import Profile from "./Pages/Seeker/Profile"
+import Register from "./Pages/Authentication/Register"
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
       <Navigation/>
       <Routes>
         <Route path="/login" element={<Login/>}></Route>
+        <Route path="/register" element={<Register/>}></Route>
         <Route element={<ProtectedRoute allowedRoles={['student']} />}>
           <Route path="/" element={<HeroSection/>}></Route>
           <Route path="/seeker/jobs" element={<Job/>}></Route>
@@ -37,7 +39,7 @@ const App = () => {
           <Route path="/employee/company/post" element={<AddCompany/>}></Route>
           <Route path="/employee/jobs" element={<JobList/>}></Route>
           <Route path="/employee/job/details/:id" element={<JobDetails/>}></Route>
-          <Route path="/employee/job/appplicants" element={<ApplicantsList jobId={undefined}/>}></Route>
+          {/* <Route path="/employee/job/appplicants" element={<ApplicantsList jobId={undefined}/>}></Route> */}
           <Route path="/employee/job/applicant/:id" element={<ApplicantByJob/>}></Route>
         </Route>
       </Routes>

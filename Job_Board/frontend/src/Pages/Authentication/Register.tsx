@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Checkbox, Grid, TextField, Typography, Paper, Box } from '@mui/material';
+import { Button, Checkbox, Grid, TextField, Typography, Paper } from '@mui/material';
 import { styled } from 'styled-components';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
@@ -28,7 +28,7 @@ const RoleToggle = styled(Button)`
   border-radius: 9999px;
 `;
 
-const JobSeekerXLogin = () => {
+const Register = () => {
   const [role, setRole] = useState('student');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -37,7 +37,7 @@ const JobSeekerXLogin = () => {
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/v1/user/login', {
+      const response = await axios.post('http://localhost:5000/api/v1/user/register', {
         email,
         password,
         role
@@ -47,7 +47,7 @@ const JobSeekerXLogin = () => {
       const user = response?.data?.user;
       localStorage.setItem("token",token)
       localStorage.setItem("user",JSON.stringify(user))
-      navigate("/")
+      navigate("/login")
     } catch (error) {
       console.error('Login error:', error);
       alert('Login failed. Please check your credentials.');
@@ -62,7 +62,7 @@ const JobSeekerXLogin = () => {
             JobSeekerX
           </Typography>
           <Typography variant="body2" align="center" color="textSecondary" gutterBottom>
-            Login to your account
+            Register to your account
           </Typography>
 
           <Grid container justifyContent="center" spacing={2} sx={{ mt: 2, mb: 3 }}>
@@ -111,13 +111,10 @@ const JobSeekerXLogin = () => {
               <Grid item>
                 <Checkbox size="small" /> Remember me
               </Grid>
-              <Grid >
-                <Box onClick={()=>navigate("/register")}>
-                  <Typography variant="body2" color="primary" sx={{ cursor: 'pointer' }}>
-                    Register?
-                  </Typography>
-                </Box>
-                
+              <Grid item>
+                <Typography variant="body2" color="primary" sx={{ cursor: 'pointer' }}>
+                  Forgot password?
+                </Typography>
               </Grid>
             </Grid>
             <Button
@@ -127,7 +124,7 @@ const JobSeekerXLogin = () => {
               color="primary"
               sx={{ mt: 2, mb: 1 }}
             >
-              Login
+              Register
             </Button>
           </form>
 
@@ -145,4 +142,4 @@ const JobSeekerXLogin = () => {
   );
 };
 
-export default JobSeekerXLogin;
+export default Register;
