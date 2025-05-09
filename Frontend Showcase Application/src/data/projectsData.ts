@@ -21,6 +21,7 @@ export const projectsData: FrontendProject[] = [
       "Creating a consistent design system"
     ],
     screenshots: [
+      "https://www.ttnews.com/sites/default/files/2023-09/iTECH-Dysart-1200.jpg",
       "https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "https://images.pexels.com/photos/6956903/pexels-photo-6956903.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     ],
@@ -99,6 +100,7 @@ export const projectsData: FrontendProject[] = [
       "Optimizing for different devices and screen sizes"
     ],
     screenshots: [
+      "https://www.benchmarklabs.com/wp-content/uploads/2021/12/IoT-Based-Weather-Monitoring-System-For-Micro-Climate-Forecasting.jpg",
       "https://images.pexels.com/photos/1118873/pexels-photo-1118873.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
       "https://images.pexels.com/photos/1463530/pexels-photo-1463530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
     ],

@@ -5,11 +5,11 @@ export const profileData: Profile = {
     name: "Abhishek Ratho",
     title: "Software Developer",
     avatar: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    about: "Passionate frontend developer with 5+ years of experience creating beautiful, responsive web applications. Specializing in React ecosystem and modern JavaScript. Focused on creating exceptional user experiences through clean code and thoughtful design.",
+    about: "An Entry level developer with knowledge in the domain of AI and Frontend development with 8 months of experince working at Turing,NIT Rourkela and 2 months of intern experince as a Software Developer at Hiringhood",
     contact: {
       email: "abhishek.ratho2004@gmail.com",
-      linkedin: "linkedin.com/in/alexchen",
-      github: "github.com/alexchen",
+      linkedin: "www.linkedin.com/in/abhishek-ratho-56a178240",
+      github: "https://github.com/AbhishekRatho-2004",
       website: "abhishek.dev"
     }
   },

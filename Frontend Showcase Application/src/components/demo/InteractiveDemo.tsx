@@ -84,7 +84,7 @@ const CodeTitle = styled(Typography)`
   color: var(--color-gray-900);
 `;
 
-const CodeToggle = styled("button")`
+const CodeToggle = styled(Button)`
   background: none;
   border: none;
   color: var(--color-primary-600);
@@ -104,7 +104,7 @@ const CodeWrapper = styled(Box)`
 const InteractiveDemo = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [showCode, setShowCode] = useState(false);
-  const [buttonColor, setButtonColor] = useState('var(--color-primary-600)');
+  const [buttonColor, setButtonColor] = useState("");
   
   const toggleModal = () => {
     setIsOpen(!isOpen);

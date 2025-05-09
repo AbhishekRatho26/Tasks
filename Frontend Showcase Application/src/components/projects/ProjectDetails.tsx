@@ -1,7 +1,7 @@
 import {styled} from '@mui/material/styles';
 import { ExternalLink, Github, ChevronRight } from 'lucide-react';
 import { FrontendProject } from '../../utils/types';
-import { Box, Button } from '@mui/material';
+import { Box, Button, Typography } from '@mui/material';
 
 interface ProjectDetailsProps {
   project: FrontendProject;
@@ -25,14 +25,14 @@ const Header = styled(Box)`
   }
 `;
 
-const Title = styled("h2")`
+const Title = styled(Typography)`
   font-size: 1.75rem;
   font-weight: 600;
   color: var(--color-gray-900);
   margin: 0;
 `;
 
-const Description = styled("p")`
+const Description = styled(Typography)`
   font-size: 1.125rem;
   color: var(--color-gray-700);
   line-height: 1.6;
@@ -65,7 +65,7 @@ const Section = styled(Box)`
   margin-top: var(--space-6);
 `;
 
-const SectionTitle = styled("h3")`
+const SectionTitle = styled(Typography)`
   font-size: 1.25rem;
   font-weight: 600;
   color: var(--color-gray-800);
